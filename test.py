@@ -12,7 +12,7 @@ class Producer(threading.Thread):
         producer = KafkaProducer(bootstrap_servers='192.168.1.64:9092')
 
         while True:
-            producer.send('test', b"\xc2Hello, world!")
+            producer.send('test', b"Hello, world!")
             time.sleep(1)
 
 
